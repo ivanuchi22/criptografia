@@ -11,7 +11,7 @@ def rsa_encrypt_char(char, e, n):
     c = pow(m, e, n)  # Realiza la operación c = m^e mod n
     return c
 
-# Cifrado del mensaje
+# Cifrado de mensaje
 ciphertext = [rsa_encrypt_char(char, e, n) for char in message]
 for char, c in zip(message, ciphertext):
         print(char, " -> c = ", c)
