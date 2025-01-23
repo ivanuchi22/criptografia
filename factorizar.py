@@ -1,5 +1,5 @@
 # Parámetro n interceptado de la clave pública
-n = 3233
+n = int(input("Introduzca el parámetro n: "))
 
 # Definimos la función que factoriza n
 def factorize_n(n):
